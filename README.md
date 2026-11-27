@@ -39,7 +39,7 @@ Este repositório reúne as requisições da integração externa do **Secullum 
    ```
 3. **Abra a coleção no Bruno:** clique em **Open Collection** e selecione a pasta `bruno/` dentro do repositório clonado.
 4. **Configure suas credenciais sem sujar o Git:**
-   - No Bruno, selecione o environment **Secullum Ponto Web (Produção)** (ou crie uma cópia local chamada `Producao.local.yml`, já ignorada pelo `.gitignore`).
+   - No Bruno, selecione o environment **Secullum RH (Produção)** (ou crie uma cópia local chamada `Producao.local.yml`, já ignorada pelo `.gitignore`).
    - Preencha `username` e `password`.
 5. **Autentique e selecione o banco:**
    - Rode `01-autenticacao-e-selecao-de-banco` → **`01-token`** (salva `access_token` automaticamente).
@@ -107,8 +107,8 @@ bruno/
 
 > O foco principal deste repositório é o **Bruno**. Os arquivos do Postman são mantidos em [`postman/`](./postman/) apenas como alternativa secundária para quem ainda não migrou.
 
-- Collection: [`postman/secullum-ponto-web.postman_collection.json`](./postman/secullum-ponto-web.postman_collection.json)
-- Environment: [`postman/secullum-ponto-web.postman_environment.json`](./postman/secullum-ponto-web.postman_environment.json)
+- Collection: [`postman/secullum-rh.postman_collection.json`](./postman/secullum-rh.postman_collection.json)
+- Environment: [`postman/secullum-rh.postman_environment.json`](./postman/secullum-rh.postman_environment.json)
 
 No Postman, é necessário **reimportar** os arquivos JSON manualmente sempre que houver atualização no repositório.
 
