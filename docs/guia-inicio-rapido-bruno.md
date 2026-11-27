@@ -1,6 +1,6 @@
 # 🚀 Guia de Início Rápido no Bruno
 
-Este guia leva você do zero até a primeira requisição funcionando na API de Integração Externa do Secullum Ponto Web.
+Este guia leva você do zero até a primeira requisição funcionando na API de Integração Externa do Secullum RH.
 
 ---
 
@@ -29,7 +29,7 @@ Para evitar que suas senhas ou alterações locais bloqueiem futuras atualizaç�
 
 ### Opção A — Criar um Environment Local (Recomendado)
 1. No canto superior direito do Bruno, abra o seletor de **Environments**.
-2. Copie o conteúdo de `Secullum Ponto Web (Produção)` (arquivo `bruno/environments/Producao.yml`) ou crie um novo environment chamado **`Producao.local`** (o arquivo será salvo como `Producao.local.yml`, que já está no `.gitignore`).
+2. Copie o conteúdo de `Secullum RH (Produção)` (arquivo `bruno/environments/Producao.yml`) ou crie um novo environment chamado **`Producao.local`** (o arquivo será salvo como `Producao.local.yml`, que já está no `.gitignore`).
 3. Preencha **`username`** e **`password`** e salve.
 
 ### Opção B — Usar variáveis temporárias (Runtime)
@@ -39,7 +39,7 @@ Para evitar que suas senhas ou alterações locais bloqueiem futuras atualizaç�
 
 ## 4. Fluxo de Autenticação (Obrigatório antes de testar)
 
-Toda chamada na API do Ponto Web precisa de duas coisas: **Token Bearer** e **ID do Banco (`secullumidbancoselecionado`)**.
+Toda chamada na API do Secullum RH precisa de duas coisas: **Token Bearer** e **ID do Banco (`secullumidbancoselecionado`)**.
 
 1. Abra a pasta **`01-autenticacao-e-selecao-de-banco`**.
 2. Execute **`01-token`** (`POST /Token`):

@@ -1,6 +1,6 @@
 # 🛠️ Troubleshooting & Dicas Rápidas (Suporte)
 
-Problemas mais comuns ao testar a API do Secullum Ponto Web e como resolver rápido.
+Problemas mais comuns ao testar a API do Secullum RH e como resolver rápido.
 
 ---
 
