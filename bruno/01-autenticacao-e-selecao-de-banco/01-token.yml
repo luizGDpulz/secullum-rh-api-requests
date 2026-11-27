@@ -31,12 +31,11 @@ runtime:
 
         if (res.body && res.body.access_token) {
           const token = String(res.body.access_token);
-          bru.setVar("access_token", token);
-          try {
-            if (bru.getEnvName()) {
-              bru.setEnvVar("access_token", token);
-            }
-          } catch (e) {}
+          if (bru.getEnvName()) {
+            bru.setEnvVar("access_token", token);
+          } else {
+            bru.setVar("access_token", token);
+          }
         }
 settings:
   encodeUrl: true
@@ -45,4 +44,4 @@ settings:
   maxRedirects: 5
 docs: >-
   Obtém o `access_token` via `grant_type=password`.
-  O script pós-resposta salva automaticamente o valor em `access_token` (na collection e no environment ativo).
+  O script pós-resposta salva automaticamente em `access_token` (no environment ativo, ou em variável de sessão se nenhum environment estiver selecionado).
