@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Cliente%20Principal-Bruno%20(OpenCollection)-F4AA41?style=for-the-badge&logo=bruno&logoColor=white" alt="Bruno" />
   <img src="https://img.shields.io/badge/Endpoints-63%20Requests-2B237C?style=for-the-badge" alt="63 Requests" />
-  <img src="https://img.shields.io/badge/Swagger%20Ref-25%2F10%2F2026-42E8E0?style=for-the-badge" alt="Swagger Ref" />
+  <img src="https://img.shields.io/badge/Swagger%20Ref-27%2F11%2F2026-42E8E0?style=for-the-badge" alt="Swagger Ref" />
   <img src="https://img.shields.io/badge/Postman-Secund%C3%A1rio-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman Secundário" />
 </p>
 
@@ -120,4 +120,4 @@ No Postman, é necessário **reimportar** os arquivos JSON manualmente sempre qu
 - **Swagger JSON:** [pontowebintegracaoexterna.secullum.com.br/swagger/v1/swagger.json](https://pontowebintegracaoexterna.secullum.com.br/swagger/v1/swagger.json)
 - **Manual PDF Oficial (Secullum):** [Integracao_Externa_Ponto_Web.pdf](https://github.com/Secullum/PontoWebIntegracaoExternaExemplo/blob/master/Integracao_Externa_Ponto_Web.pdf)
 
-> **Nota de referência:** Collection revisada em `27/11/2026` contra a cópia local do [`swagger.json`](./swagger.json) (capturada em `25/10/2026`). Em caso de divergência entre o manual PDF antigo e o Swagger atual, **a collection prioriza o Swagger vivo** (ex.: `IntegracaoExterna/Pendencias` foi removida no Swagger atual; `GravarLogsIniciarBkp` e `PontoOffline/AssinaturaArquivo/Assinar` existem no Swagger e não constam no PDF).
+> **Nota de referência:** Collection validada contra o [Swagger vivo](https://pontowebintegracaoexterna.secullum.com.br/swagger/v1/swagger.json) em `27/11/2026`. Em caso de divergência entre o manual PDF antigo e o Swagger atual, **a collection prioriza o Swagger vivo** (ex.: `IntegracaoExterna/Pendencias` foi removida no Swagger atual; `GravarLogsIniciarBkp` e `PontoOffline/AssinaturaArquivo/Assinar` existem no Swagger e não constam no PDF).
