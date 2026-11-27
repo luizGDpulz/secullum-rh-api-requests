@@ -4,38 +4,43 @@ info:
   seq: 1
 http:
   method: GET
-  url: >-
-    {{base_url_api}}/IntegracaoExterna/FonteDados?DataInicio={{data_inicio}}&DataFim={{data_fim}}&HoraInicio={{hora_inicio}}&HoraFim={{hora_fim}}&FuncionarioPis={{funcionario_pis}}&FuncionarioCpf={{funcionario_cpf}}&EquipamentoId={{equipamento_id}}&Origem={{origem}}
+  url: '{{base_url_api}}/IntegracaoExterna/FonteDados?DataInicio={{data_inicio}}&DataFim={{data_fim}}'
   headers:
-    - name: Accept
-      value: application/json
-    - name: secullumidbancoselecionado
-      value: '{{selected_bank_id}}'
+  - name: Accept
+    value: application/json
+  - name: secullumidbancoselecionado
+    value: '{{selected_bank_id}}'
   params:
-    - name: DataInicio
-      value: '{{data_inicio}}'
-      type: query
-    - name: DataFim
-      value: '{{data_fim}}'
-      type: query
-    - name: HoraInicio
-      value: '{{hora_inicio}}'
-      type: query
-    - name: HoraFim
-      value: '{{hora_fim}}'
-      type: query
-    - name: FuncionarioPis
-      value: '{{funcionario_pis}}'
-      type: query
-    - name: FuncionarioCpf
-      value: '{{funcionario_cpf}}'
-      type: query
-    - name: EquipamentoId
-      value: '{{equipamento_id}}'
-      type: query
-    - name: Origem
-      value: '{{origem}}'
-      type: query
+  - name: DataInicio
+    value: '{{data_inicio}}'
+    type: query
+  - name: DataFim
+    value: '{{data_fim}}'
+    type: query
+  - name: HoraInicio
+    value: '{{hora_inicio}}'
+    type: query
+    disabled: true
+  - name: HoraFim
+    value: '{{hora_fim}}'
+    type: query
+    disabled: true
+  - name: FuncionarioPis
+    value: '{{funcionario_pis}}'
+    type: query
+    disabled: true
+  - name: FuncionarioCpf
+    value: '{{funcionario_cpf}}'
+    type: query
+    disabled: true
+  - name: EquipamentoId
+    value: '{{equipamento_id}}'
+    type: query
+    disabled: true
+  - name: Origem
+    value: '{{origem}}'
+    type: query
+    disabled: true
   auth: inherit
 settings:
   encodeUrl: true

@@ -18,15 +18,29 @@ runtime:
         });
 
         if (Array.isArray(res.body) && res.body.length > 0) {
+          console.log("Bancos disponíveis (" + res.body.length + "):");
+          res.body.forEach((b, idx) => {
+            console.log(`  [${idx}] id=${b.id} | identificador=${b.identificador || "-"} | nome=${b.nome || "-"}`);
+          });
+
           const first = res.body[0];
+          const saveVar = (key, val) => {
+            bru.setVar(key, val);
+            try {
+              if (bru.getEnvName()) {
+                bru.setEnvVar(key, val);
+              }
+            } catch (e) {}
+          };
+
           if (first.id !== undefined && first.id !== null) {
-            bru.setVar("selected_bank_id", String(first.id));
+            saveVar("selected_bank_id", String(first.id));
           }
           if (first.identificador) {
-            bru.setVar("selected_bank_identificador", String(first.identificador).replace(/[^a-zA-Z0-9]/g, ""));
+            saveVar("selected_bank_identificador", String(first.identificador).replace(/[^a-zA-Z0-9]/g, ""));
           }
           if (first.nome) {
-            bru.setVar("selected_bank_name", String(first.nome));
+            saveVar("selected_bank_name", String(first.nome));
           }
         }
 settings:
@@ -35,5 +49,6 @@ settings:
   followRedirects: true
   maxRedirects: 5
 docs: >-
-  Lista os bancos disponíveis para o token atual. O teste salva o primeiro retorno em `selected_bank_id`,
-  `selected_bank_identificador` e `selected_bank_name`.
+  Lista os bancos disponíveis para o token atual.
+  Salva automaticamente o primeiro banco em `selected_bank_id`, `selected_bank_identificador` e `selected_bank_name`.
+  Se o cliente tiver mais de um banco, consulte a aba Console/Timeline no Bruno e copie o `id` desejado para a variável `selected_bank_id`.

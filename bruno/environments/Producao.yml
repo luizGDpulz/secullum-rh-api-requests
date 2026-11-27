@@ -1,4 +1,4 @@
-name: Ponto Web Integracao Externa - Environment (v3 do Swagger JSON)
+name: Secullum Ponto Web (Produção)
 variables:
   - name: base_url_auth
     value: https://autenticador.secullum.com.br

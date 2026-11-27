@@ -4,19 +4,21 @@ info:
   seq: 2
 http:
   method: GET
-  url: '{{base_url_api}}/IntegracaoExterna/PerguntasAdicionais?descricao={{descricao}}&grupo={{grupo}}'
+  url: '{{base_url_api}}/IntegracaoExterna/PerguntasAdicionais'
   headers:
-    - name: Accept
-      value: application/json
-    - name: secullumidbancoselecionado
-      value: '{{selected_bank_id}}'
+  - name: Accept
+    value: application/json
+  - name: secullumidbancoselecionado
+    value: '{{selected_bank_id}}'
   params:
-    - name: descricao
-      value: '{{descricao}}'
-      type: query
-    - name: grupo
-      value: '{{grupo}}'
-      type: query
+  - name: descricao
+    value: '{{descricao}}'
+    type: query
+    disabled: true
+  - name: grupo
+    value: '{{grupo}}'
+    type: query
+    disabled: true
   auth: inherit
 settings:
   encodeUrl: true

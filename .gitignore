@@ -4,3 +4,8 @@ cases/
 case_*.md
 *.case.md
 entregas/
+
+# Credenciais e environments locais do Bruno (evita conflito no git pull)
+.env
+bruno/.env
+bruno/environments/*.local.yml
