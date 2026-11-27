@@ -1,8 +1,8 @@
 {
   "info": {
-    "name": "Secullum Ponto Web - Integração Externa",
+    "name": "Secullum RH - Integração Externa",
     "_postman_id": "b1119d3e-33b8-4d8e-8a9c-72f8a5756a03",
-    "description": "Collection validada contra o Swagger vivo e o manual PDF da integração externa do Secullum Ponto Web.\n\nFluxo recomendado:\n1. Gerar o token em `Autenticação e Seleção de Banco/Token`.\n2. Opcionalmente consultar `Reivindicações do Token`.\n3. Listar bancos e definir `selected_bank_id`.\n4. Executar as rotas de `IntegracaoExterna` com `Authorization: Bearer {{access_token}}` e o header `secullumidbancoselecionado`.\n\nDivergências observadas entre as fontes:\n- O manual PDF ainda descreve `IntegracaoExterna/Pendencias`, mas essa rota não aparece no swagger atual.\n- O swagger atual expõe `GravarLogsIniciarBkp` e `PontoOffline/AssinaturaArquivo/Assinar`, que não aparecem no PDF.\n- Em caso de conflito entre PDF e API viva, esta collection prioriza o swagger atual.",
+    "description": "Collection validada contra o Swagger vivo e o manual PDF da integração externa do Secullum RH.\n\nFluxo recomendado:\n1. Gerar o token em `Autenticação e Seleção de Banco/Token`.\n2. Opcionalmente consultar `Reivindicações do Token`.\n3. Listar bancos e definir `selected_bank_id`.\n4. Executar as rotas de `IntegracaoExterna` com `Authorization: Bearer {{access_token}}` e o header `secullumidbancoselecionado`.\n\nDivergências observadas entre as fontes:\n- O manual PDF ainda descreve `IntegracaoExterna/Pendencias`, mas essa rota não aparece no swagger atual.\n- O swagger atual expõe `GravarLogsIniciarBkp` e `PontoOffline/AssinaturaArquivo/Assinar`, que não aparecem no PDF.\n- Em caso de conflito entre PDF e API viva, esta collection prioriza o swagger atual.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "auth": {
