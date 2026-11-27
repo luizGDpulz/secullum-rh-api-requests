@@ -6,10 +6,13 @@ variables:
     value: https://pontowebintegracaoexterna.secullum.com.br
   - name: username
     value: ''
+    secret: true
   - name: password
     value: ''
+    secret: true
   - name: access_token
     value: ''
+    secret: true
   - name: selected_bank_id
     value: ''
   - name: selected_bank_identificador
