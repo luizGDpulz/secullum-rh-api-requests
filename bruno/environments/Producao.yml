@@ -1,4 +1,4 @@
-name: Secullum Ponto Web (Produção)
+name: Secullum RH (Produção)
 variables:
   - name: base_url_auth
     value: https://autenticador.secullum.com.br

@@ -1,6 +1,6 @@
 opencollection: 1.0.0
 info:
-  name: Secullum Ponto Web - Integração Externa
+  name: Secullum RH - Integração Externa
 request:
   auth:
     type: bearer
@@ -67,7 +67,7 @@ request:
     - name: atividade_descricao
       value: Atividade Exemplo
 docs: >-
-  Collection validada contra o Swagger vivo e o manual PDF da integração externa do Secullum Ponto Web.
+  Collection validada contra o Swagger vivo e o manual PDF da integração externa do Secullum RH.
 
 
   Fluxo recomendado:
