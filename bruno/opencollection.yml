@@ -1,6 +1,7 @@
 opencollection: 1.0.0
 info:
   name: Secullum RH - Integração Externa
+  version: '1.0.0'
 request:
   auth:
     type: bearer
