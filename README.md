@@ -1,36 +1,36 @@
 <p align="center">
-  <img src="./assets/cover.svg" alt="Secullum Ponto Web — API de Integração Externa (Bruno)" width="100%" />
+  <img src="./assets/cover.svg" alt="Secullum RH — API de Integração Externa (Bruno)" width="100%" />
 </p>
 
-<h1 align="center">Secullum Ponto Web — API Requests (Suporte)</h1>
+<h1 align="center">Secullum RH — API Requests</h1>
 
 <p align="center">
-  Coleção oficial do time de suporte para testar, diagnosticar e validar a <strong>API de Integração Externa do Secullum Ponto Web</strong> com o <a href="https://www.usebruno.com/"><strong>Bruno</strong></a>.
+  Coleção aberta para a comunidade testar e validar a <strong>API de Integração Externa do Secullum RH</strong> com o <a href="https://www.usebruno.com/"><strong>Bruno</strong></a>. Use como convier!
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Cliente%20Principal-Bruno%20(OpenCollection)-F4AA41?style=for-the-badge&logo=bruno&logoColor=white" alt="Bruno" />
   <img src="https://img.shields.io/badge/Endpoints-63%20Requests-2B237C?style=for-the-badge" alt="63 Requests" />
-  <img src="https://img.shields.io/badge/Swagger%20Ref-14%2F04%2F2026-42E8E0?style=for-the-badge" alt="Swagger Ref" />
+  <img src="https://img.shields.io/badge/Swagger%20Ref-27%2F11%2F2026-42E8E0?style=for-the-badge" alt="Swagger Ref" />
   <img src="https://img.shields.io/badge/Postman-Secund%C3%A1rio-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman Secundário" />
 </p>
 
 ---
 
-## 🎯 Por que este repositório existe?
+## 🎯 Sobre o projeto
 
-Este projeto foi estruturado para dar ao **time de suporte** uma forma **rápida, padronizada e sem dor de cabeça** de reproduzir chamados e testar endpoints da integração externa do Secullum Ponto Web:
+Este repositório reúne as requisições da integração externa do **Secullum RH** de forma organizada e pronta para uso no dia a dia:
 
 - **Foco total no Bruno (OpenCollection YAML):** todas as requests vivem como arquivos `.yml` organizados por módulo na pasta [`bruno/`](./bruno/).
 - **Pronto para clicar em "Send":** filtros opcionais de listagens já vêm desabilitados por padrão para você listar registros com 1 clique e ativar filtros só quando precisar.
 - **Autenticação automática:** ao rodar `Token` e `Listar Bancos`, o token e o banco selecionado são preenchidos automaticamente nas demais requests.
-- **Sempre sincronizado:** atualize o repositório com um simples `git pull` e o Bruno carrega as novidades na hora, sem reimportar nada.
+- **Fácil de manter atualizado:** atualize o repositório com um simples `git pull` e o Bruno carrega as novidades na hora, sem reimportar nada.
 
 ---
 
 ## ⚡ Início Rápido no Bruno
 
-> Novo por aqui? Veja o passo a passo ilustrado em **[Guia de Início Rápido no Bruno](./docs/guia-inicio-rapido-bruno.md)**.
+> Novo no Bruno? Veja o passo a passo completo em **[Guia de Início Rápido no Bruno](./docs/guia-inicio-rapido-bruno.md)**.
 
 1. **Instale o Bruno** em [usebruno.com](https://www.usebruno.com/downloads) (versão 3.x+ recomendada).
 2. **Clone este repositório** em uma pasta fixa do seu computador:
@@ -42,13 +42,13 @@ Este projeto foi estruturado para dar ao **time de suporte** uma forma **rápida
    - No Bruno, selecione o environment **Secullum Ponto Web (Produção)** (ou crie uma cópia local chamada `Producao.local.yml`, já ignorada pelo `.gitignore`).
    - Preencha `username` e `password`.
 5. **Autentique e selecione o banco:**
-   - Rode `01 - Autenticação e Seleção de Banco` → **`01 - Token`** (salva `access_token` automaticamente).
-   - Rode `01 - Autenticação e Seleção de Banco` → **`03 - Listar Bancos`** (salva `selected_bank_id` e lista todos os bancos no **Console** do Bruno).
+   - Rode `01-autenticacao-e-selecao-de-banco` → **`01-token`** (salva `access_token` automaticamente).
+   - Rode `01-autenticacao-e-selecao-de-banco` → **`03-listar-bancos`** (salva `selected_bank_id` e lista todos os bancos no **Console** do Bruno).
 6. **Teste qualquer endpoint** das pastas `02` a `21`!
 
 ---
 
-## 🔄 Como manter atualizado quando o repo mudar?
+## 🔄 Como manter atualizado
 
 Como o Bruno lê os arquivos `.yml` diretamente da pasta do seu computador, **você não precisa ficar reimportando coleções**:
 
@@ -58,11 +58,11 @@ Como o Bruno lê os arquivos `.yml` diretamente da pasta do seu computador, **vo
    ```
 2. Pronto! Todas as novas requests, correções de payload e atualizações do Swagger aparecem automaticamente no Bruno.
 
-> **Dica de ouro:** Nunca salve sua senha dentro de arquivos versionados se for fazer `git pull` direto, ou use um environment `*.local.yml` (ignorado pelo Git). Veja os detalhes no **[Guia de Atualização para o Suporte](./docs/guia-atualizacao-suporte.md)**.
+> **Dica de ouro:** Nunca salve sua senha dentro de arquivos versionados se for fazer `git pull` direto — use um environment `*.local.yml` (ignorado pelo Git). Veja os detalhes no **[Guia de Atualização](./docs/guia-atualizacao-suporte.md)**.
 
 ---
 
-## 📚 Guias do Suporte
+## 📚 Guias de Uso
 
 | Guia | Para que serve |
 | :--- | :--- |
@@ -120,4 +120,4 @@ No Postman, é necessário **reimportar** os arquivos JSON manualmente sempre qu
 - **Swagger JSON:** [pontowebintegracaoexterna.secullum.com.br/swagger/v1/swagger.json](https://pontowebintegracaoexterna.secullum.com.br/swagger/v1/swagger.json)
 - **Manual PDF Oficial (Secullum):** [Integracao_Externa_Ponto_Web.pdf](https://github.com/Secullum/PontoWebIntegracaoExternaExemplo/blob/master/Integracao_Externa_Ponto_Web.pdf)
 
-> **Nota de referência:** Material validado contra o Swagger vivo em `14/04/2026` (cópia local em [`swagger.json`](./swagger.json)). Em caso de divergência entre o manual PDF antigo e o Swagger atual, **a collection prioriza o Swagger vivo** (ex.: `IntegracaoExterna/Pendencias` foi removida no Swagger atual; `GravarLogsIniciarBkp` e `PontoOffline/AssinaturaArquivo/Assinar` existem no Swagger e não constam no PDF).
+> **Nota de referência:** Collection validada contra o [Swagger vivo](https://pontowebintegracaoexterna.secullum.com.br/swagger/v1/swagger.json) em `27/11/2026`. Em caso de divergência entre o manual PDF antigo e o Swagger atual, **a collection prioriza o Swagger vivo** (ex.: `IntegracaoExterna/Pendencias` foi removida no Swagger atual; `GravarLogsIniciarBkp` e `PontoOffline/AssinaturaArquivo/Assinar` existem no Swagger e não constam no PDF).
