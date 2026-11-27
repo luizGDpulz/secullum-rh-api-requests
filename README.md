@@ -39,8 +39,9 @@ Este repositório reúne as requisições da integração externa do **Secullum 
    ```
 3. **Abra a coleção no Bruno:** clique em **Open Collection** e selecione a pasta `bruno/` dentro do repositório clonado.
 4. **Configure suas credenciais sem sujar o Git:**
-   - No Bruno, selecione o environment **Secullum RH (Produção)** (ou crie uma cópia local chamada `Producao.local.yml`, já ignorada pelo `.gitignore`).
-   - Preencha `username` e `password`.
+   - No Bruno, selecione o environment **Secullum RH (Produção)**.
+   - Abra a aba **Secrets** do environment e preencha `username` e `password` — o Bruno salva esses valores **criptografados apenas na sua máquina**, sem alterar os arquivos do Git.
+   - *(Opcional)* Se quiser alterar outras variáveis (datas, CPF, etc.) sem conflito, crie uma cópia chamada `Producao.local.yml` (já ignorada pelo `.gitignore`).
 5. **Autentique e selecione o banco:**
    - Rode `01-autenticacao-e-selecao-de-banco` → **`01-token`** (salva `access_token` automaticamente).
    - Rode `01-autenticacao-e-selecao-de-banco` → **`03-listar-bancos`** (salva `selected_bank_id` e lista todos os bancos no **Console** do Bruno).

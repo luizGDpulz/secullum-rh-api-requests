@@ -25,15 +25,15 @@ Este guia leva você do zero até a primeira requisição funcionando na API de 
 
 ## 3. Configurar credenciais sem conflito no Git
 
-Para evitar que suas senhas ou alterações locais bloqueiem futuras atualizações (`git pull`):
+As variáveis sensíveis (`username`, `password` e `access_token`) já vêm marcadas como **Secrets** (`secret: true`) no environment **Secullum RH (Produção)**. Isso significa que o Bruno **não grava seus valores no arquivo `.yml`**, mantendo-os salvos localmente de forma segura e sem sujar o Git!
 
-### Opção A — Criar um Environment Local (Recomendado)
-1. No canto superior direito do Bruno, abra o seletor de **Environments**.
-2. Copie o conteúdo de `Secullum RH (Produção)` (arquivo `bruno/environments/Producao.yml`) ou crie um novo environment chamado **`Producao.local`** (o arquivo será salvo como `Producao.local.yml`, que já está no `.gitignore`).
-3. Preencha **`username`** e **`password`** e salve.
+### Opção A — Preencher na aba Secrets (Recomendado)
+1. No canto superior direito do Bruno, selecione o environment **Secullum RH (Produção)**.
+2. Clique no ícone de editar o environment e vá na aba **Secrets**.
+3. Preencha **`username`** e **`password`** e clique em **Save**.
 
-### Opção B — Usar variáveis temporárias (Runtime)
-- Se você preferir não salvar a senha em disco, preencha `username` e `password` apenas na sessão atual ou na aba **Vars** sem commitar alterações.
+### Opção B — Criar um Environment Local (`*.local.yml`)
+- Se você também quiser customizar outras variáveis padrão (como `data_inicio`, `data_fim`, `funcionario_cpf`) sem gerar conflito no `git pull`, crie um environment chamado **`Producao.local`** (salvo como `Producao.local.yml`, já ignorado pelo `.gitignore`).
 
 ---
 

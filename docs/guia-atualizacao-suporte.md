@@ -24,9 +24,9 @@ Assim que o comando terminar, o Bruno já reflete todas as alterações imediata
 
 ## 🛡️ Como evitar conflitos ao atualizar?
 
-O erro mais comum ao rodar `git pull` acontece quando você editou um arquivo rastreado pelo Git (como `bruno/environments/Producao.yml` com sua senha).
+As variáveis `username`, `password` e `access_token` já são **Secrets** no Bruno, então preenchê-las na aba **Secrets** não altera nenhum arquivo do repositório.
 
-**Como evitar:**
+Se você quiser alterar outras variáveis (como `data_inicio`, `funcionario_cpf`, etc.) sem risco de conflito no `git pull`:
 1. Use um environment com sufixo **`.local.yml`** (ex.: `Producao.local.yml`), pois ele é ignorado pelo `.gitignore`.
 2. Se você acabou editando `Producao.yml` sem querer e o `git pull` reclamar, limpe a alteração local antes de puxar:
    ```bash
