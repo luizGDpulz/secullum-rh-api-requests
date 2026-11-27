@@ -30,11 +30,19 @@ runtime:
         });
 
         if (res.body && res.body.access_token) {
-          bru.setVar("access_token", String(res.body.access_token));
+          const token = String(res.body.access_token);
+          bru.setVar("access_token", token);
+          try {
+            if (bru.getEnvName()) {
+              bru.setEnvVar("access_token", token);
+            }
+          } catch (e) {}
         }
 settings:
   encodeUrl: true
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-docs: Obtém o access_token via `grant_type=password`. O teste salva automaticamente o valor em `access_token`.
+docs: >-
+  Obtém o `access_token` via `grant_type=password`.
+  O script pós-resposta salva automaticamente o valor em `access_token` (na collection e no environment ativo).

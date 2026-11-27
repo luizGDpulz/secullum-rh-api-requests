@@ -421,7 +421,8 @@
               "query": [
                 {
                   "key": "descricao",
-                  "value": "{{descricao}}"
+                  "value": "{{descricao}}",
+                  "disabled": true
                 }
               ]
             },
@@ -535,15 +536,18 @@
               "query": [
                 {
                   "key": "FuncionarioPis",
-                  "value": "{{funcionario_pis}}"
+                  "value": "{{funcionario_pis}}",
+                  "disabled": true
                 },
                 {
                   "key": "FuncionarioCpf",
-                  "value": "{{funcionario_cpf}}"
+                  "value": "{{funcionario_cpf}}",
+                  "disabled": true
                 },
                 {
                   "key": "AtividadeDescricao",
-                  "value": "{{atividade_descricao}}"
+                  "value": "{{atividade_descricao}}",
+                  "disabled": true
                 },
                 {
                   "key": "DataInicio",
@@ -551,7 +555,8 @@
                 },
                 {
                   "key": "DataFim",
-                  "value": "{{data_fim}}"
+                  "value": "{{data_fim}}",
+                  "disabled": true
                 }
               ]
             },
@@ -632,23 +637,28 @@
                 },
                 {
                   "key": "FuncionarioPis",
-                  "value": "{{funcionario_pis}}"
+                  "value": "{{funcionario_pis}}",
+                  "disabled": true
                 },
                 {
                   "key": "FuncionarioCpf",
-                  "value": "{{funcionario_cpf}}"
+                  "value": "{{funcionario_cpf}}",
+                  "disabled": true
                 },
                 {
                   "key": "EmpresaDocumento",
-                  "value": "{{empresa_documento}}"
+                  "value": "{{empresa_documento}}",
+                  "disabled": true
                 },
                 {
                   "key": "HoraInicio",
-                  "value": "{{hora_inicio}}"
+                  "value": "{{hora_inicio}}",
+                  "disabled": true
                 },
                 {
                   "key": "HoraFim",
-                  "value": "{{hora_fim}}"
+                  "value": "{{hora_fim}}",
+                  "disabled": true
                 }
               ]
             },
@@ -1030,7 +1040,8 @@
               "query": [
                 {
                   "key": "descricao",
-                  "value": "{{descricao}}"
+                  "value": "{{descricao}}",
+                  "disabled": true
                 }
               ]
             },
@@ -1144,7 +1155,8 @@
               "query": [
                 {
                   "key": "cnpjCpf",
-                  "value": "{{empresa_documento}}"
+                  "value": "{{empresa_documento}}",
+                  "disabled": true
                 }
               ]
             },
@@ -1436,27 +1448,33 @@
                 },
                 {
                   "key": "HoraInicio",
-                  "value": "{{hora_inicio}}"
+                  "value": "{{hora_inicio}}",
+                  "disabled": true
                 },
                 {
                   "key": "HoraFim",
-                  "value": "{{hora_fim}}"
+                  "value": "{{hora_fim}}",
+                  "disabled": true
                 },
                 {
                   "key": "FuncionarioPis",
-                  "value": "{{funcionario_pis}}"
+                  "value": "{{funcionario_pis}}",
+                  "disabled": true
                 },
                 {
                   "key": "FuncionarioCpf",
-                  "value": "{{funcionario_cpf}}"
+                  "value": "{{funcionario_cpf}}",
+                  "disabled": true
                 },
                 {
                   "key": "EquipamentoId",
-                  "value": "{{equipamento_id}}"
+                  "value": "{{equipamento_id}}",
+                  "disabled": true
                 },
                 {
                   "key": "Origem",
-                  "value": "{{origem}}"
+                  "value": "{{origem}}",
+                  "disabled": true
                 }
               ]
             },
@@ -2006,7 +2024,8 @@
               "query": [
                 {
                   "key": "descricao",
-                  "value": "{{descricao}}"
+                  "value": "{{descricao}}",
+                  "disabled": true
                 }
               ]
             },
@@ -2112,7 +2131,8 @@
               "query": [
                 {
                   "key": "numero",
-                  "value": "{{horario_numero}}"
+                  "value": "{{horario_numero}}",
+                  "disabled": true
                 }
               ]
             },
@@ -2415,7 +2435,8 @@
               "query": [
                 {
                   "key": "descricao",
-                  "value": "{{descricao}}"
+                  "value": "{{descricao}}",
+                  "disabled": true
                 }
               ]
             },
@@ -2529,7 +2550,8 @@
               "query": [
                 {
                   "key": "descricao",
-                  "value": "{{descricao}}"
+                  "value": "{{descricao}}",
+                  "disabled": true
                 }
               ]
             },
@@ -2643,11 +2665,13 @@
               "query": [
                 {
                   "key": "descricao",
-                  "value": "{{descricao}}"
+                  "value": "{{descricao}}",
+                  "disabled": true
                 },
                 {
                   "key": "grupo",
-                  "value": "{{grupo}}"
+                  "value": "{{grupo}}",
+                  "disabled": true
                 }
               ]
             },
